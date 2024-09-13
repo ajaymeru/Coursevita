@@ -1,0 +1,40 @@
+.About {
+    display: flex;
+    text-align: center;
+    padding: 5% 10%;
+    flex-direction: column;
+    margin: 0 auto;
+
+    h4 {}
+
+    .aboutcontent {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width:750px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .aboutleft {
+            img {
+                width: 300px;
+            }
+        }
+
+        .aboutright {
+            width: 50%;
+
+            @media (max-width:750px) {
+                width: 90%;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+
+    }
+}

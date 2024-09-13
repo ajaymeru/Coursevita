@@ -1,0 +1,68 @@
+.skills-container {
+    padding: 0 10%;
+    text-align: center;
+
+    .skills-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .skillbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        @media (max-width:650px) {
+            gap: 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .img {
+            position: relative;
+            width: 400px;
+            background-image: url("./Assets/gradient.png");
+            border-radius: 63% 37% 57% 43% / 35% 62% 38% 65%;
+
+            img {
+                width: 300px;
+                background-color: transparent;
+            }
+        }
+
+        .skills-flex {
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+
+            @media (max-width:650px) {
+                width: 90%;
+            }
+
+            .skill-item {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                }
+
+                .skill-image {
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
