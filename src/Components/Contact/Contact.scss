@@ -1,3 +1,5 @@
+
+
 .Contact {
     display: flex;
     align-items: center;
@@ -19,6 +21,13 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 50px -5px rgb(37, 40, 76);
+            border-radius: 30px;
+            background: #0C1631;
+            box-shadow: inset 5px 5px 5px #080e1f,
+                inset -5px -5px 5px #101e43;
 
             .form-group {
                 margin-bottom: 1em;
@@ -38,6 +47,7 @@
                     border: 1px solid #ccc;
                     padding: 0.5em;
                     font-size: 1em;
+                    width: 90%;
                 }
             }
 

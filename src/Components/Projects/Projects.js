@@ -8,13 +8,19 @@ import elearning from './Assets/elearning.png';
 import galaxy from './Assets/galaxy.png';
 import nft from './Assets/nft.png';
 import weather from './Assets/weather.png';
+import quiz from "./Assets/quiz.png"
+import foozero from "./Assets/foodzero.png"
+import news from './Assets/newsapp.png';
 
 const projects = [
-    { img: bookstore, url: 'https://ajaymeru.github.io/E-Learning/', title: 'Bookstore' },
+    { img: bookstore, url: 'https://ajaymeru.github.io/book-store-app/', title: 'Bookstore' },
     { img: elearning, url: 'https://ajaymeru.github.io/E-Learning/', title: 'E-Learning' },
     { img: galaxy, url: 'https://travel-galaxy-by-ajay.netlify.app/', title: 'Galaxy' },
-    { img: nft, url: 'https://ajaymeru.github.io/E-Learning/', title: 'NFT' },
+    { img: nft, url: 'https://ajaymeru.github.io/NFT/', title: 'NFT' },
     { img: weather, url: 'https://ajaymeru-weather-app.netlify.app/', title: 'Weather' },
+    { img: quiz, url: 'https://quiz-tech-am.netlify.app/', title: 'Quiz App' },
+    { img: foozero, url: 'https://ajaymeru.github.io/Food-Zero/', title: 'foozero' },
+    { img: news, url: 'https://ajaymeru.github.io/News-', title: 'News App' },
 ];
 
 const Projects = () => {
@@ -23,8 +29,8 @@ const Projects = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true, 
-        autoplaySpeed: 1000, 
+        autoplay: true,
+        autoplaySpeed: 1000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -47,6 +53,7 @@ const Projects = () => {
 
     return (
         <div className='projects-container'>
+            <h4>Projects</h4>
             <Slider {...settings}>
                 {projects.map((project, index) => (
                     <div key={index} className='project-container'>

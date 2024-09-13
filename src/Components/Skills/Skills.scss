@@ -51,6 +51,12 @@
                 border-radius: 8px;
                 overflow: hidden;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
+                padding: 10px;
+                border-radius: 30px;
+                background: #0C1631;
+                box-shadow: inset 5px 5px 5px #080e1f,
+                    inset -5px -5px 5px #101e43;
+
 
                 &:hover {
                     transform: scale(1.1);
@@ -61,6 +67,8 @@
                     max-width: 100%;
                     max-height: 100%;
                     object-fit: contain;
+                    border-radius: 10px;
+                    background-color: transparent;
                 }
             }
         }

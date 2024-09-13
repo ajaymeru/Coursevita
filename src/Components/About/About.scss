@@ -5,7 +5,11 @@
     flex-direction: column;
     margin: 0 auto;
 
-    h4 {}
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+
+    }
 
     .aboutcontent {
         display: flex;
@@ -26,6 +30,12 @@
 
         .aboutright {
             width: 50%;
+
+            p {
+                font-size: 1rem;
+                line-height: 25px;
+
+            }
 
             @media (max-width:750px) {
                 width: 90%;

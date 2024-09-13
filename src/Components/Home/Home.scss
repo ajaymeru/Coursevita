@@ -99,6 +99,9 @@
 
         @media (max-width:550px) {
             flex: none;
+            max-width: 500px;
+            min-width: 320px;
+            width: 100%;
         }
 
         .firstcircle {
@@ -108,7 +111,7 @@
             height: 500px;
             border-radius: 50%;
             animation: rotateCircle 10s linear infinite;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='48' fill='none' stroke='%23333' stroke-width='0.5' stroke-dasharray='2%2c 5' stroke-linecap='round'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='48' fill='none' stroke='%23333' stroke-width='0.3' stroke-dasharray='2%2c 5' stroke-linecap='round'/%3e%3c/svg%3e");
             background-size: cover;
 
             @keyframes rotateCircle {
@@ -120,6 +123,21 @@
                     transform: rotate(360deg);
                 }
             }
+
+            @media (max-width:550px) {
+                width: 400px;
+                height: 400px;
+            }
+
+            @media (max-width:450px) {
+                width: 300px;
+                height: 300px;
+            }
+
+            @media (max-width:350px) {
+                width: 200px;
+                height: 200px;
+            }
         }
 
         .secondcircle {
@@ -129,7 +147,7 @@
             height: 400px;
             border-radius: 50%;
             animation: reverseCircle 15s linear infinite;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='48' fill='none' stroke='darkblue' stroke-width='0.5' stroke-dasharray='2%2c 5' stroke-linecap='round'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='48' fill='none' stroke='%23101f48' stroke-width='1' stroke-dasharray='2%2c 5' stroke-linecap='round'/%3e%3c/svg%3e");
             background-size: cover;
             flex-direction: column;
 
@@ -142,6 +160,21 @@
                     transform: rotate(0deg);
                 }
             }
+
+            @media (max-width:550px) {
+                width: 350px;
+                height: 350px;
+            }
+
+            @media (max-width:450px) {
+                width: 250px;
+                height: 250px;
+            }
+
+            @media (max-width:350px) {
+                width: 150px;
+                height: 150px;
+            }
         }
 
         .myimg {
@@ -152,8 +185,28 @@
                 width: 300px;
                 height: 500px;
                 background-color: transparent;
+                // filter: drop-shadow(-6px -4px 9px #3f5287);
+                filter: drop-shadow(-6px -4px 9px hsl(224, 50%, 39%));
+
+                @media (max-width:550px) {
+                    width: 90%;
+                    // height: 350px;
+                    height: 70%;
+                }
+
+                // @media (max-width:450px) {
+                //     width: 300px;
+                //     // height: 300px;
+                // }
+
+                // @media (max-width:350px) {
+                //     width: 200px;
+                //     height: 200px;
+                // }
 
             }
+
+
 
         }
     }

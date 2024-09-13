@@ -10,6 +10,7 @@ import mdb from './Assets/mongodb.jpeg';
 import sql from './Assets/download.jpeg';
 import git from './Assets/git.png';
 import man from "./Assets/man1.png"
+import boostrap from "./Assets/bootstrap.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init()
@@ -25,6 +26,7 @@ const skills = [
     { img: mdb, alt: 'MongoDB' },
     { img: sql, alt: 'SQL' },
     { img: git, alt: 'Git' },
+    { img: boostrap, alt: 'Bootstrap' },
 ];
 
 const Skills = () => {
