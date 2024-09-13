@@ -44,4 +44,4 @@ Includes a form for users to get in touch with me, with fields for name, email, 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/ajaymeru/Coursevita.git
